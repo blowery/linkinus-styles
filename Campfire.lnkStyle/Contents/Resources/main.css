@@ -1,0 +1,118 @@
+body {
+	margin: 0;
+	color: #4b4b4b;
+	background-color: white;
+	font-family: "Lucida Grande", verdana, arial, helvetica, sans-serif;
+	font-size: 0.8em;
+	padding: 0;
+}
+
+a img {
+	border: 0;
+}
+
+img {
+	display: block;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left:8px;
+	max-width: 94%;
+}
+
+a:link, a:visited, a:hover, a:active {
+	color:#0033cc;
+}
+
+a:hover {
+	text-shadow: rgba( 0, 0, 0, .3 ) 0 1px 1px;
+}
+
+table.chat {
+	width: 100%;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+td {
+	padding: 5px;
+}
+
+tr.my_message {
+	background-color: #ffffcc;
+}
+
+tr.notice_message {
+	background-color: #d9e7fb;
+	font-size: 0.8em;
+}
+
+tr.kick_message {
+	background-color: #d46a6a;
+	font-size: 0.8em;
+}
+
+tr.part_message {
+	background-color: #fff4e8;
+	font-size: 0.8em;
+}
+
+tr.action_message {
+	background-color: #dad9d9;
+	font-size: 0.8em;
+}
+
+tr.my_message td.person {
+	min-width: 120px;
+	text-align: right;
+	background: transparent;
+	border-right: 1px solid #dcdcdc;
+	font-weight: bold;
+}
+
+tr.text_message td.person {
+	background-color: #efefef;
+	min-width: 120px;
+	text-align: right;
+	border-right: 1px solid #dcdcdc;
+	font-weight: bold;
+}
+
+tr.action_message td.person {
+	min-width: 120px;
+}
+
+tr.text_message td.person.highlighted {
+	background-color: #c6ffaa;
+}
+
+td.person {
+	border-bottom: 1px solid #efefef;
+	vertical-align: top;
+}
+
+td.body {
+	width: 100%;
+	background: transparent;
+	text-align: left;
+	border-bottom: 1px solid #efefef;
+}
+
+tr.my_message td.body div.time, tr.text_message td.body div.time {
+	float: right;
+	font-size: 0.78em;
+	color: #bbb;
+	visibility: visible;
+	line-height: 16px;
+}
+
+tr.my_message td.body:hover div.time, tr.text_message td.body:hover div.time {
+	float: right;
+	font-size: 0.78em;
+	color: #bbb;
+	visibility: visible;
+	line-height: 16px;
+}
+
+#pastcontent {
+	opacity: .70;
+}

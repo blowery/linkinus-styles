@@ -1,0 +1,66 @@
+body { font-family:  "Lucida Grande", Helvetica, sans-serif; margin: 0; }
+a { text-decoration: none; }
+
+/**
+ * Old content should be transparent, and displayed in normal way on hover
+ **/
+#pastcontent { border-bottom: 1px solid #c2c2c2; -webkit-transition: opacity 0.5s linear; }
+#pastcontent > p { opacity: 0.2; -webkit-transition: opacity 0.2s linear; }
+#pastcontent:hover > p { opacity: 0.5; }
+#pastcontent > p:hover { opacity: 1; }
+
+/**
+ * Some events are stronger than others ;o)
+ **/
+.join .nick, .modeChange .description, .nickChange .description, .part .nick, .quit .nick, .topicChange .nick { font-weight: bold; }
+
+/**
+ * We have always the same color!
+ */
+.mynick { font-weight: bold; color: #A90101 !important; }
+
+
+.time { float: right; color: #aaa; }
+.message .nick { width: 85px; text-align: right; padding-right: 5px; }
+.message .nick:before { content: "<"; white-space: nowrap; }
+.message .nick:after { content: ">"; white-space: nowrap; }
+
+.highlight { background: #F8F2F2; }
+
+.message, .action, .info { margin: 0; padding: 3px; display: block; clear: both; min-height: 1.3em; }
+.action, .info { color: #aaa; }
+.action { padding-left: 85px; }
+.message .description, .info { margin-left: 90px; }
+.message .description { margin-right: 35px; }
+
+
+.action .nick:before { color: #c0c; content: ' \00BB '; padding-right: 3px; }
+
+.message .nick { float: left; 	}
+.message .nick, .message .description { display: block; word-wrap: break-word; }
+
+
+
+/***
+ * Colors borrowed from simplify theme. Thanks.
+ **/
+.userhost-1 .nick { color: #0080ff; }
+.userhost-2 .nick { color: #00DF00; }
+.userhost-3 .nick { color: #ff0080; }
+.userhost-4 .nick { color: #dd00ff; }
+.userhost-5 .nick { color: #76E0BD; }
+.userhost-6 .nick { color: #7F4FFF; }
+.userhost-7 .nick { color: #8BC100; }
+.userhost-8 .nick { color: #cc66ff; }
+.userhost-9 .nick { color: #BB0008; }
+.userhost-10 .nick { color: #6F42BC; }
+.userhost-11 .nick { color: #008080; }
+.userhost-12 .nick { color: #904000; }
+.userhost-13 .nick { color: #808000; }
+.userhost-14 .nick { color: #4ABFD1; }
+.userhost-15 .nick { color: #3333dd; }
+.userhost-16 .nick { color: #C19C46; }
+.userhost-17 .nick { color: #0057DA; }
+.userhost-18 .nick { color: #008000; }
+.userhost-19 .nick { color: #608040; }
+.userhost-20 .nick { color: #ff6fcf; }
